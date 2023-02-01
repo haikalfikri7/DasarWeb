@@ -1,0 +1,482 @@
+:root{
+    --blue:#00D7FF;
+    --bluesea:#72FFFF;
+    --gradient:linear-gradient(90deg, var(--blue), var(--bluesea));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--blue);
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: #fff;
+    background-color: darkblue;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+header .logo span{
+    color: var(--bluesea);
+}
+
+header .navbar ul{
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+header input{
+    display: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+li a{
+    color: var(--blue);
+}
+
+li a:hover{
+    color: var(--bluesea);
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+article{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content h1{
+    font-size: 5.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.home .content h1 span{
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.7rem;
+    color: #fff;
+    box-shadow: 0 .5rem 1rem rgba((0,0,0,0.1));
+    transition: all .3s ease-out;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.home .image img{
+    width: 40vw;
+    height:40vw;
+}
+
+.stocks{
+    padding: 5rem;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column .content{
+    order: 3;
+}
+
+.column .content h2{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.column .content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.column .stocks-image{
+    margin-right: 2rem;
+    flex: 1 1 40rem;
+}
+
+.column .stocks-image img{
+    padding-left: 5rem;
+    width: 100%;
+    height: 30vw;
+}
+
+.m-funds-o{
+    padding: 5rem;
+}
+
+.m-funds{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-funds .content-1 h3{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.m-funds .content-1 p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.m-funds .m-funds-image{
+    margin-left: 3rem;
+    flex: 1 1 40rem;
+}
+
+.m-funds .m-funds-image img{
+    padding-right: 5rem;
+    width: 100%;
+    height: 40vw;
+    order:3;
+}
+
+.obligation{
+    width: 100%;
+    margin-top: -22rem;
+}
+.obligation-0{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.obligation-0 .content-2{
+    order: 2;
+}
+
+.obligation-0 .content-2 h4{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.obligation-0 .content-2 p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.obligation-0 .obligation-image{
+    margin-right: 2rem;
+    flex: 1 1 40rem;
+}
+
+.obligation-0 .obligation-image img{
+    padding-left: 2rem;
+    margin-top: 4rem;
+    width: 90%;
+    height: 50vw;
+}
+
+.gold{
+    padding: 5rem;
+    margin-top: -18rem;
+}
+
+.gold-0{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gold-0 .content-3 h5{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.gold-0 .content-3 p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gold-0 .gold-image{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    flex: 1 1 40rem;
+}
+
+.gold-0 .gold-image img{
+    padding-right: 5rem;
+    width: 100%;
+    height: 40vw;
+}
+
+.profile-card{
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    width: 50%;
+    background-color: var(--blue);
+}
+
+.profile-card .text{
+    text-align: center;
+}
+
+.profile-card .text h2{
+    font-size: 4rem;
+}
+
+.profile-card .text p{
+    font-size: 1.5rem;
+}
+
+.profile-card .photo{
+    margin-left: 15rem;
+}
+
+.profile-card .photo img{
+    padding: 2rem;
+    border-radius: 50%;
+    width: 60%;
+    height: 20vw;
+    justify-items: center;
+}
+
+.footer{
+    background: #fff;
+    background-color: darkblue;
+}
+
+.footer .text-footer {
+    text-align: center;
+}
+
+.footer .text-footer h1{
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.footer .text-footer h1 span{
+    color: var(--bluesea);
+}
+
+.footer .text-footer p{
+    font-size: 1.5rem;
+    color: var(--bluesea);
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 992px){
+    article{
+        padding: 0 3%;
+        padding-top: 7.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .3s linear;
+    }
+
+    
+
+    li{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .home .image img{
+        width: 100%;
+    }
+
+    .home .content h1{
+        font-size: 3.6rem;
+    }
+
+    .home .content p{
+        font-size: 1.6rem;
+    }
+
+
+    .column{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+
+    .column .stocks-image img{
+        width: 100%;
+    }
+
+    .m-funds{
+        padding: -8rem;
+        flex-direction: column;
+    }
+
+    .column .content{
+        padding: 10rem;
+    }
+
+    .m-funds-o{
+        margin-top: -15rem;
+    }
+
+    .m-funds .m-funds-image img{
+        padding: 2.5rem;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .obligation{
+        margin-top: -18rem;
+    }
+
+    .obligation-0{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .obligation-0 .content-2{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 60%;
+    }
+
+    .obligation-0 .obligation-image img{
+        width: 60%;
+        padding-left: 5rem;
+        margin-left: 6rem;
+    }
+
+    .gold{
+        margin-top: -10rem;
+    }
+
+    .gold-0{
+        flex-direction: column;
+    }
+
+    .gold-0 .gold-image{
+        margin-top: 1rem;
+    }
+
+    .profile-card{
+        width: 100%;
+    }
+
+    .profile-card .photo{
+        margin-left: 11rem;
+    }
+
+    .profile-card .photo img{
+        padding: 2rem;
+        border-radius: 50%;
+        width: 60%;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%
+    }
+}
